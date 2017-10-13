@@ -1,0 +1,28 @@
+.filter
+	.filter-combo
+		a.filter-combo__title Инфраструктура:
+		ul
+			li
+				input#c_pool(type="checkbox", name="c_pool", checked hidden)
+				label(for="c_pool") Бассейн
+			li
+				input#c_parking(type="checkbox", name="c_parking", checked hidden)
+				label(for="c_parking") Парковка
+			li
+				input#c_wifi(type="checkbox", name="c_wifi", checked hidden)
+				label(for="c_wifi") Wi-Fi
+	.filter-combo
+		a.filter-combo__title Тип жилья:
+		ul
+			li
+				input#c_hotel(type="checkbox", name="c_hotel", checked hidden)
+				label(for="c_hotel") Гостиница
+			li
+				input#c_motel(type="checkbox", name="c_motel", checked hidden)
+				label(for="c_motel") Мотель
+			li
+				input#c_apart(type="checkbox", name="c_apart", checked hidden)
+				label(for="c_apart") Аппартаменты
+	.filter-cost
+		a.filter-cost__title Стоимость в сутки (р):
+		.filter-cost-box

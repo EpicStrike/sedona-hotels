@@ -1,0 +1,33 @@
+.filter-combo {
+  display: inline-block;
+  width: 250px;
+
+  ul{
+    margin-top: -1px;
+    padding-left: 16px;
+  }
+  li{
+    display: block;
+    padding-top: 26px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] + label {
+    font: 14px bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 23px;
+    width: 27px;
+    margin: 0 10px -8px -16px;
+    background-image: url('/assets/img/checkbox-off.png');
+    background-repeat: no-repeat;
+  }
+  input[type="checkbox"]:checked + label::before {
+    background-image: url('/assets/img/checkbox-on.png');
+  }
+}

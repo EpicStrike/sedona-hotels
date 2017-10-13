@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="utf-8">
+  <title>Frontend test</title>
+  <link href="assets/css/normalize.css?v=8c6eee6b2107ef25dc486020ced13898" rel="stylesheet">
+  <link href="assets/css/style.css?v=49ab6b9fc1bc9be82659ac10dd3d3f8e" rel="stylesheet">
+  <body>
+    <div class="wrapper">
+      <header class="header"><img class="logo" src="assets/img/logo.png" width="138" height="70">
+        <nav class="menu">
+          <ul>
+            <li><a>Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li class="active"><a href="./hotels.html">Гостиницы</a></li>
+            <li><a href="#map-hotels">Карта штата</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="filter">
+          <div class="filter-combo"><a class="filter-combo__title">Инфраструктура:</a>
+            <ul>
+              <li>
+                <input id="c_pool" type="checkbox" name="c_pool" checked hidden>
+                <label for="c_pool">Бассейн</label>
+              </li>
+              <li>
+                <input id="c_parking" type="checkbox" name="c_parking" checked hidden>
+                <label for="c_parking">Парковка</label>
+              </li>
+              <li>
+                <input id="c_wifi" type="checkbox" name="c_wifi" checked hidden>
+                <label for="c_wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-combo"><a class="filter-combo__title">Тип жилья:</a>
+            <ul>
+              <li>
+                <input id="c_hotel" type="checkbox" name="c_hotel" checked hidden>
+                <label for="c_hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="c_motel" type="checkbox" name="c_motel" checked hidden>
+                <label for="c_motel">Мотель</label>
+              </li>
+              <li>
+                <input id="c_apart" type="checkbox" name="c_apart" checked hidden>
+                <label for="c_apart">Аппартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-cost"><a class="filter-cost__title">Стоимость в сутки (р):</a>
+            <div class="filter-cost-box"></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-block"><a href="#">#VISITSEDONA</a></div>
+        <div class="footer-block">
+          <ul class="socials">
+            <li><a href="http://twitter.com"><img src="/assets/img/twitter-icon.png" width="17" height="15" alt="twitter"></a></li>
+            <li><a href="http://fb.com"><img src="/assets/img/facebook-icon.png" width="12" height="22" alt="facebook"></a></li>
+            <li><a href="http://youtube.com"><img src="/assets/img/youtube-icon.png" width="20" height="16" alt="youtube"></a></li>
+          </ul>
+        </div>
+        <div class="footer-block"><a class="label-site" href="http://htmlacademy.ru">Website by<img class="label-site__academy" src="/assets/img/logo_name.png" width="115" height="41" alt="Логотип академии"></a></div>
+      </footer>
+    </div>
+  </body>
+</html>
